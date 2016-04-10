@@ -1,0 +1,17 @@
+$really-too-big: 36px;
+$big-ass-title: 28px;
+$largest: 22px;
+$larger: 20px;
+$large: 18px;
+$normal: 16px;
+$small: 14px;
+$smaller: 12px;
+$smallest: 10px;
+
+@mixin font-content {
+  font-family: 'Open Sans', sans-serif;
+}
+
+@mixin font-titles {
+  font-family: 'Arvo', serif;
+}
