@@ -1,0 +1,60 @@
+@import "mixins";
+
+body {
+  
+  &.bluecookin {
+
+    > div.site-header {
+      background-color: rgba(211, 243, 255, 0.8);
+      border-top: 2px solid $border-blue;
+      height: $height-of-site-header-normal;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: $z-highest;
+
+      > section {
+        height: 100%;
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 100%;
+
+        > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+
+        > header {
+          padding-left: 10px;
+          width: 75px;
+
+          > img {
+            height: 75px;
+            width: 75px;
+          }
+        }
+
+        > ul {
+          float: right;
+          margin-top: 28px;
+
+          > li {
+            display: inline-block;
+            font-size: $larger;
+            text-align: center;
+            vertical-align: middle;
+            width: 100px;
+
+            > a {
+              text-decoration: none;
+
+              &:hover {
+                text-decoration: underline;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

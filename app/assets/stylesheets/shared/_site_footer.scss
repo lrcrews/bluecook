@@ -1,0 +1,27 @@
+@import "mixins";
+
+body {
+  
+  &.bluecookin {
+
+    > div.site-footer {
+      background-color: rgba(211, 243, 255, 0.8);
+      border-bottom: 2px solid $border-blue;
+      height: $height-of-site-footer-normal;
+      width: 100%;
+      z-index: $z-highest;
+      
+      > section {
+        height: 100%;
+        margin: 0 auto;
+        max-width: 1000px;
+        width: 100%;
+
+        > * {
+          display: inline-block;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}

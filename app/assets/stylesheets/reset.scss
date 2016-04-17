@@ -1,0 +1,67 @@
+@import "mixins";
+
+html,
+body,
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+  font-weight: normal;
+  font-family: Helvetica;
+  line-height: 150%;
+}
+
+ol,
+ul {
+  clear: both;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: $font-link;
+
+  &:active,
+  &:hover {
+    color: $font-link;
+  }
+  
+  &:visited {
+    color: $font-link;
+  }
+}
+
+h1 {
+  color: $font-gray;
+  font-size: $big-ass-title;
+  line-height: 115%;
+  text-align: center;
+  @include font-titles;
+}
+
+p {
+  color: $font-black;
+  font-size: $normal;
+  text-align: justify;
+  @include font-content;
+}
+
+body.bluecookin {
+  background-color: rgba(211, 243, 255, 0.8);
+  color: $font-black;
+  margin: 0;
+  padding: 0;
+
+  > section.page-container {
+    background-color: $background-page-container;
+    margin: 0 auto;
+    max-width: 1000px;
+    min-height: 1024px;
+    padding: $height-of-site-header-normal 16px 20px;
+    padding-left: 16px;
+    padding-right: 16px;
+    width: 100%;
+  }
+}
