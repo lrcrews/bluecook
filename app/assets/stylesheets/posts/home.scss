@@ -63,6 +63,71 @@ body {
             }
           }
         }
+
+        > section {
+          margin: 20px 0 40px;
+
+          > header,
+          > footer {
+            display: inline-block;
+            vertical-align: bottom;
+          }
+
+          > footer {
+            float: right;
+            margin-right: 20px;
+          }
+
+          > ul {
+
+            > li {
+              border: 1px solid $border-gray;
+              cursor: pointer;
+              display: inline-block;
+              height: 300px;
+              margin: 12px 20px 0 0;
+              padding: 4px;
+              vertical-align: top;
+              width: 300px;
+
+              &:hover {
+
+                > section {
+
+                  > header {
+                    overflow: hidden;
+
+                    > img {
+                      -ms-transform: scale(1.1);
+                      -webkit-transform: scale(1.1);
+                      transform: scale(1.1);
+                    }
+                  }
+
+                  > footer {
+                    color: $font-link;
+                  }
+                }
+              }
+
+              > section {
+
+                > header {
+                  height: 260px;
+
+                  > img {
+                    height: 260px;
+                    width: 100%;
+                  }
+                }
+
+                > footer {
+                  height: 32px;
+                }
+              }
+            }
+          }
+        }
       }
     }
   }
